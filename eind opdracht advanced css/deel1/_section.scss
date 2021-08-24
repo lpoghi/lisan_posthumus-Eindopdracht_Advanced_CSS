@@ -1,0 +1,24 @@
+@import "./mixin";
+
+.containertestimonal{
+    @include card;
+    position: relative;
+    section {
+    p:only-child{
+        background-color: $upper-color;
+        padding: 3em;
+        padding-bottom:8em;
+        border-radius: $topradius;
+        margin-bottom: -1em;
+      }
+
+      &:last-child {
+        background-color: $footer-color;
+        border-radius: $bottomradius;
+        padding-top: 4em;
+        padding-bottom: 2em;
+        color: white;
+        }
+    }   
+
+}

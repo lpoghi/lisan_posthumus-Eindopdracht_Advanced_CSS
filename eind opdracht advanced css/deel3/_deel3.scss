@@ -1,0 +1,72 @@
+@import "./mixin";
+@import "./variables";
+
+ nav {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    a {
+    position: absolute; 
+    transition: 0.3s;
+    &:hover {
+      right: 0px;
+    }
+  }  
+}
+
+
+
+.blog {
+    background-color: $blog-color;
+    @include box-styling;
+    top: 300px;
+    right: -158px;
+    &::before {
+      font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f5fc";
+      @include icon-styling;
+    }
+  }
+  
+  .twitter { 
+    background-color: $twitter-color;
+    @include box-styling;
+    top: 341px;
+    right: -172px;
+    &::before {
+      font-family: "Font Awesome 5 Brands"; content: "\f099";
+      @include icon-styling;
+    }
+  }
+  
+  .facebook{
+    background-color: $facebook-color;
+    @include box-styling;
+    top: 420px;
+    right: -183px;
+    &::before {
+      font-family: "Font Awesome 5 Brands"; content: "\f39e";
+      @include icon-styling;
+    }
+  }
+  
+  .linkedin { 
+    background-color: $linkedin-color;
+    @include box-styling;
+    top: 381px;
+    right: -167px;
+    &::before {
+      font-family: "Font Awesome 5 Brands"; content: "\f0e1";
+      @include icon-styling;
+    }
+  }
+  
+  .github { 
+    background-color: $github-color;
+    @include box-styling;
+    right: -185px; 
+    top: 460px;
+    &::before {
+      font-family: "Font Awesome 5 Brands"; content: "\f09b";
+      @include icon-styling;
+    }
+  }

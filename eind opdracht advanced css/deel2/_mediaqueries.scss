@@ -1,0 +1,18 @@
+@media only screen and (min-width : 768px) {
+  .containergrid{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    grid-gap: 2em;
+  }
+}
+   
+
+@media only screen and (min-width : 1024px) {
+  .containergrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    grid-gap: 2em;
+  } 
+}

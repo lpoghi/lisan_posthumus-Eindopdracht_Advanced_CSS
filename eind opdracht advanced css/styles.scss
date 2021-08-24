@@ -1,0 +1,11 @@
+@import "./deel1/variables";
+@import "./deel1/figure";
+@import "./deel1/section";
+@import "./deel2/deel2";
+@import "./deel3/deel3";
+
+body {
+    background-color: $base-color;
+    font-family: "open sans";
+  }
+  
